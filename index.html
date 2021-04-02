@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix inverse</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Inverse of Matrix using Gauss Jordan Method</h1>
+        <div class="row">
+            <div class="col">
+                
+                <h3>About the method</h3>
+                <p style="font-weight: 600;">To calculate inverse matrix using Gauss Jordan Method you need to do following steps:</p>
+                <ol>
+                    <li>Form the augmented matrix by the identity matrix.</li>
+                    <li>Perform the row reduction operation on this augmented matrix to generate a row reduced echelon form of the matrix.</li>
+                    <li>The following row operations are performed on augmented matrix when required: 
+                        <ul>
+                            <li>Interchange any two row.</li>
+                            <li>Multiply each element of row by a non-zero integer.</li>
+                            <li>Replace a row by the sum of itself and a constant multiple of another row of the matrix.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="btn">
+                    <button id="calculate">Calculate</button>
+                </div>
+               
+            </div>
+
+            <div class="col result">
+                
+                <h3 id="resultHeading">Result of Inverse of Matrix</h3>
+                <table id="data">
+                   
+                </table>                
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
